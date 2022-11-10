@@ -1,0 +1,33 @@
+@media only screen and (max-width: 600px) {
+  main{ 
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > ul > a {
+    display: none;
+    
+  }
+
+  nav, nav > ul > li{
+    height: 30px;
+  }
+
+
+  nav:hover ,nav > ul:hover >  a {
+    height: 100%;
+    display: flex;
+  }
+
+  main > article > section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70vh;
+    flex-wrap: nowrap;
+    padding: 15px 10px;
+  
+  }
+
+
+}

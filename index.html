@@ -12,33 +12,52 @@
 
   <link rel="stylesheet" href="/index_style.css">
   <link rel="stylesheet" href="/default_style.css">
+  <link rel="stylesheet" href="/dark_style.css">
+  <link rel="stylesheet" href="/mobile_style.css">
+  
 
 </head>
 
 <body>
   <main>
-    <header><div class="placeholder"></div></header>
-      <nav class="nav">
-        <ul>
-          <li class="menu-item">Navigation</li>
-          <a href="#top"><li class="menu-item">Home</li></a>
-          <a href="#fav-book"><li class="menu-item">Fav Book</li></a>
-          <a href="#fav-place"><li class="menu-item">Fav Place</li></a>
-          <a href="#fav-food"> <li class="menu-item">Fav Food</li></a>
-          <a href="#feed-back"> <li class="menu-item">Feedback form</li></a>
-          <a href="/schools.html"><li class="menu-item">Schools</li></a>
-          <a href="https://github.com/RoyPalkovitch/web-dev-project"><li class="menu-item">Github repo</li></a>
-          </li>  
-        </ul>
-      </nav>
+    <header><a href="/"><img src="/images/clipart106848.png" width="50px" height="50px" />
+        <h1>WebDev Project</h1>
+      </a></header>
+    <nav class="nav">
+      <ul>
+        <li class="menu-item">Navigation</li>
+        <a href="#top">
+          <li class="menu-item">Home</li>
+        </a>
+        <a href="#fav-book">
+          <li class="menu-item">Fav Book</li>
+        </a>
+        <a href="#fav-place">
+          <li class="menu-item">Fav Place</li>
+        </a>
+        <a href="#fav-food">
+          <li class="menu-item">Fav Food</li>
+        </a>
+        <a href="#feedback">
+          <li class="menu-item">Feedback form</li>
+        </a>
+        <a href="/schools.html " target="_blank">
+          <li class="menu-item">Schools</li>
+        </a>
+        <a href="https://github.com/RoyPalkovitch/web-dev-project">
+          <li class="menu-item">Github repo</li>
+        </a>
+        </li>
+      </ul>
+    </nav>
     <article>
       <section id="top">
         <h2>Welcome To My Website</h2>
         <p>My name is Roy Palkovitch and here I'm gonna show you my favorite books</p>
       </section>
       <section id="fav-book">
-        <h2 class="main-headline">Fav book - Shougan</h2>
         <div class="content">
+          <h2 class="main-headline">Fav book - Shougan</h2>
           <h3>Description:</h3>
           <p>Beginning in feudal Japan some months before the critical Battle of Sekigahara
             in 1600, <a href="https://www.amazon.com/Shogun-Asian-Saga-James-Clavell/dp/0440178002">Shōgun</a> gives an
@@ -72,12 +91,12 @@
             target="_blank">Click here to buy the book</a>
         </aside>
       </section>
-      <br>
 
       <section id="fav-place">
-        <h2>Fav place - Railay beach</h2>
         <div class="content">
+          <h2 class="main-headline">Fav place - Railay beach</h2>
           <h3>About Railay beach</h3>
+
           <p>
             Railay (Thai: ไร่เลย์, pronounced [râj lēː]), also known as Rai Leh,
             is a small peninsula between the city of Krabi and Ao Nang in Thailand.
@@ -99,18 +118,22 @@
             exercitationem asperiores quos, quis omnis eligendi commodi
             ea mollitia voluptatibus explicabo saepe ullam distinctio.
           </p>
-          <h3><a
-              href="https://www.google.com/maps/place/Railay+Beach,+Ao+Nang,+Mueang+Krabi+District,+Krabi,+Thailand/data=!4m2!3m1!1s0x3051ea9e0792e58b:0x61d88bb17c215081?sa=X&hl=en&ved=2ahUKEwjl1Z2Axo_7AhVRlxoKHYLRDTIQ8gF6BAh8EAE">
-              Find me on Google Maps</a></h3>
+
         </div>
         <aside>
-          <img class="railay-img image-shadow" src="/images/Railay/1.jpg" alt='Railay' />
-          <img class="railay-img image-shadow" src="/images/Railay/2.jpg" alt='Railay' />
+          <img class="railay-img" src="/images/Railay/1.jpg" alt='Railay' />
+          <img class="railay-img-overlay" src="/images/Railay/1.jpg" alt='Railay' />
+          <img class="railay-img" src="/images/Railay/2.jpg" alt='Railay' />
+          <img class="railay-img-overlay" src="/images/Railay/2.jpg" alt='Railay' />
+          <a class="button" href="https://www.google.com/maps/place/Railay+Beach,+Ao+Nang,+Mueang+Krabi+District,+Krabi,+Thailand/data=!4m2!3m1!1s0x3051ea9e0792e58b:0x61d88bb17c215081?sa=X&hl=en&ved=2ahUKEwjl1Z2Axo_7AhVRlxoKHYLRDTIQ8gF6BAh8EAE"
+          target="_blank">Click here to buy the book</a>
         </aside>
+
+
       </section>
 
       <section id="fav-food">
-        <h2>Fav food list:</h2>
+        <h2 class="main-headline">Fav food list:</h2>
         <div class="content">
           <ul>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odit nobis ratione nesciunt distinctio alias
@@ -128,8 +151,57 @@
           </ul>
         </div>
       </section>
+
+      <section id="feedback">
+        <h2 class="main-headline">Feedback Form</h2>
+        <div class="content">
+          <h3>I'd love to hear from you</h3><br>
+          <form>
+            <h4 class="form-heading">Personal Details</h4>
+            <label class="lable-name">Full name:</label><input required class="input-name" type="text" />
+            <label class="lable-phone">Phone:</label><input class="input-phone" type="tel" />
+            <label class="lable-mail">Email:</label><input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input-mail" type="email" />
+            <label class="lable-date">Date:</label><input class="input-date" type="date" value="2000-01-01" min="1900-01-01" max='2050-01-01'/>
+            <h4 class="input-heading">Your Feedback</h4>
+
+            <div class="input-rating">
+              <span class="rating-lable">Rating:</span>
+              <input class="check-1" type="radio" id="1" name="rating" value="1">
+              <label class="lable-1" for="1"> 1</label>
+              <input class="check-2" type="radio" id="2" name="rating" value="2">
+              <label class="lable-2" for="2"> 2</label>
+              <input class="check-3" type="radio" id="3" name="rating" value="3">
+              <label class="lable-3" for="3"> 3</label>
+              <input class="check-4" type="radio" id="4" name="rating" value="4">
+              <label class="lable-4" for="4"> 4</label>
+              <input class="check-5" type="radio" id="5" name="rating" value="5">
+              <label class="lable-5" for="5"> 5</label>
+            </div>
+
+            <div class="input-select">
+              <label for="source">How did you found us?</label>
+
+              <select name="source" id="source">
+                <option value="github">Github</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="webdev">Webdev</option>
+                <option value="google">Google</option>
+                <option value="other">Other</option>
+              </select> 
+            </div>
+            <div class="input-message">
+            <label class="lable-mail">Your message:</label><textarea  type="email" ></textarea>
+          </div>
+            <button class="button-submit" type="submit">Submit</button> 
+            <button class="button-reset" type="reset">Reset</button>
+          </form>
+        </div>
+      </section>
+
     </article>
-    <footer><p>Roy Palkovitch<br><a href="mailto:roy.palkovitch@gmail.com">roy.palkovitch@gmail.com</a></p></footer>
+    <footer>
+      <p>Roy Palkovitch<br><a href="mailto:roy.palkovitch@gmail.com">roy.palkovitch@gmail.com</a></p>
+    </footer>
   </main>
 </body>
 

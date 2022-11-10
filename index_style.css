@@ -1,26 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap'); 
-
-
-#fav-book{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: 
-  'main-headline sidebar'
-  'secondary-headline sidebar'
-  'content sidebar'
-  'content sidebar';
-}
-
 
 .button{
   margin-right:0;
-  padding: 15px 20px;
-  color:white;
-  background-color: purple;
+  padding: 15px;
+  color:black;
+  background-color: #B8BACF;
   text-decoration: none;
   border-radius: 10px;
   box-sizing: border-box;
   max-width: 230px;
+}
+
+.button:hover{
+  background-color:#999AC6;
+  color:black;
 }
 
 .main-headline{
@@ -31,13 +23,6 @@
   grid-area: content;
 }
 
-aside{
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 #fav-book > aside > img{
   height: 300px;
@@ -45,22 +30,24 @@ aside{
   margin-bottom: 10px;
 }
 
-#fav-place{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-areas: 
-  'main-headline main-headline'
-  'content sidebar';
+#fav-place > aside > *{
+  margin: 10px 0;
 }
 .railay-img{
-  margin: 30px 0px;
-  width: 50%;
+  width: 100%;
 }
 
-.railay-img:hover{
-  margin: 30px 0px;
-  width: 80%;
+.railay-img-overlay{
+  display: none;
 }
+
+.railay-img:hover :where(.railay-img-overlay){
+  width: 100%;
+  display: block;
+  position: absolute;
+  
+}
+
 
 
 .image-shadow{
@@ -68,5 +55,129 @@ aside{
   box-shadow: 5px 5px 8px;
 }
 
+ #fav-food, #feedback{
+  display: grid;
+  grid-template-rows:100px ;
+  grid-template-areas: 
+  'main-headline'
+  'content';
+  max-width: 875px;
+}
 
 
+#feedback > .content > form{
+  display: grid;
+  grid-template-columns: 80px 200px 50px 200px;
+  column-gap: 10px;
+  row-gap: 20px;
+  grid-template-areas: 
+  'form-heading form-heading form-heading form-heading'
+  'lable-name input-name lable-phone input-phone'
+  'lable-mail input-mail lable-date input-date'
+  'input-heading input-heading input-heading input-heading'
+  'input-rating input-rating  input-message input-message'
+  'input-select input-select  input-message input-message'
+  'button-submit button-submit button-reset button-reset';
+  
+}
+
+form > .button-submit{
+  grid-area: button-submit;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+form > .button-reset{
+  grid-area: button-reset;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+
+form >.form-heading{
+  grid-area: form-heading;
+}
+
+form > .input-name{
+  grid-area: input-name;
+}
+
+form > .lable-name{
+  grid-area: lable-name;
+}
+
+form > .input-phone{
+  grid-area: input-phone;
+}
+
+form > .lable-phone{
+  grid-area: lable-phone;
+}
+
+form > .input-mail{
+  grid-area: input-mail;
+  padding: 0;
+}
+
+form > .lable-mail{
+  grid-area: lable-mail;
+}
+
+form > .input-date{
+  grid-area: input-date;
+}
+
+form > .lable-date{
+  grid-area: lable-date;
+}
+
+form > .input-rating{
+  grid-area: input-rating;
+  display: grid;
+  column-gap: 10px;
+  width: 100px;
+  grid-template-areas: 
+  'rating-lable check-1 check-2 check-3 check-4 check-5'
+  '. lable-1 lable-2 lable-3 lable-4 lable-5';
+  text-align: center;
+}
+.input-rating > *{width:20px;}
+.input-rating > .rating-lable{grid-area: rating-lable; width:70px;}
+.input-rating > .check-1{grid-area: check-1;}
+.input-rating > .check-2{grid-area: check-2;}
+.input-rating > .check-3{grid-area: check-3;}
+.input-rating > .check-4{grid-area: check-4;}
+.input-rating > .check-5{grid-area: check-5;}
+.input-rating > .lable-1{grid-area: lable-1;}
+.input-rating > .lable-2{grid-area: lable-2;}
+.input-rating > .lable-3{grid-area: lable-3;}
+.input-rating > .lable-4{grid-area: lable-4;}
+.input-rating > .lable-5{grid-area: lable-5;}
+
+form > .input-select{
+  grid-area: input-select;
+  display: flex;
+  flex-direction: column;
+}
+form > .input-message{
+  grid-area: input-message;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form > .input-heading{
+  grid-area: input-heading;
+  padding-top: 20px;
+}
+
+form  h3, form  h4{
+  padding-bottom: 10px;
+}
+
+input,select,textarea{
+  border:1px solid #b8bacf;
+  background: #d2d5dd;
+  border-radius: 5px;
+}

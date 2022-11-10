@@ -1,0 +1,53 @@
+body.dark  header, 
+body.dark  footer{
+  background-color: #404258;
+}
+
+body.dark article{
+  background-color: #474E68;
+  color:white
+}
+
+
+body.dark a, body.dark p{
+  color:white;
+}
+
+
+body.dark nav{
+  grid-area: side-nav;
+  background-color: #474E68;
+  height: 100%;
+  color: white;
+}
+
+body.dark .button{
+  background-color: #6b728e;
+}
+
+
+body.dark nav > ul > a, body.dark nav > ul > li {
+  background-color: #50577A;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body.dark nav > ul > a:nth-child(even){
+  background-color: #6B728E;
+}
+
+
+body.dark nav > ul > a{
+  color:white;
+  text-decoration: none;
+}
+
+body.dark nav > ul > a:hover{
+  background-color:#999AC6;
+  color:white;
+
+}
