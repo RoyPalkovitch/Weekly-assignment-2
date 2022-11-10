@@ -1,8 +1,7 @@
-
-.button{
-  margin-right:0;
+.button {
+  margin-right: 0;
   padding: 15px;
-  color:black;
+  color: black;
   background-color: #B8BACF;
   text-decoration: none;
   border-radius: 10px;
@@ -10,156 +9,186 @@
   max-width: 230px;
 }
 
-.button:hover{
-  background-color:#999AC6;
-  color:black;
+.button:hover {
+  background-color: #999AC6;
+  color: black;
 }
 
-.main-headline{
+.main-headline {
   grid-area: main-headline;
 }
 
-.content{
-  grid-area: content;
-}
-
-
-#fav-book > aside > img{
+#fav-book>aside>img {
   height: 300px;
   width: 200px;
   margin-bottom: 10px;
 }
 
-#fav-place > aside > *{
+#fav-place>aside {
+  overflow-y: scroll;
+}
+
+#fav-place>aside>* {
   margin: 10px 0;
 }
-.railay-img{
-  width: 100%;
-}
 
-.railay-img-overlay{
-  display: none;
-}
-
-.railay-img:hover :where(.railay-img-overlay){
-  width: 100%;
-  display: block;
-  position: absolute;
-  
-}
-
-
-
-.image-shadow{
-  border:1px black solid;
+.image-shadow {
+  border: 1px black solid;
   box-shadow: 5px 5px 8px;
 }
 
- #fav-food, #feedback{
-  display: grid;
-  grid-template-rows:100px ;
-  grid-template-areas: 
-  'main-headline'
-  'content';
-  max-width: 875px;
+
+#feedback,
+#fav-food {
+  display: flex;
+  flex-direction: column;
 }
 
 
-#feedback > .content > form{
+#feedback {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+
+}
+
+#feedback h3 {
+  text-align: center;
+}
+
+#feedback>.content>form {
   display: grid;
   grid-template-columns: 80px 200px 50px 200px;
   column-gap: 10px;
   row-gap: 20px;
-  grid-template-areas: 
-  'form-heading form-heading form-heading form-heading'
-  'lable-name input-name lable-phone input-phone'
-  'lable-mail input-mail lable-date input-date'
-  'input-heading input-heading input-heading input-heading'
-  'input-rating input-rating  input-message input-message'
-  'input-select input-select  input-message input-message'
-  'button-submit button-submit button-reset button-reset';
-  
+  grid-template-areas:
+    'form-heading form-heading form-heading form-heading'
+    'lable-name input-name lable-phone input-phone'
+    'lable-mail input-mail lable-date input-date'
+    'input-heading input-heading input-heading input-heading'
+    'input-rating input-rating  input-message input-message'
+    'input-select input-select  input-message input-message'
+    'button-submit button-submit button-reset button-reset';
+
 }
 
-form > .button-submit{
+form>.button-submit {
   grid-area: button-submit;
   padding: 10px 20px;
   border-radius: 10px;
 }
 
-form > .button-reset{
+form>.button-reset {
   grid-area: button-reset;
   padding: 10px 20px;
   border-radius: 10px;
 }
 
 
-form >.form-heading{
+form>.form-heading {
   grid-area: form-heading;
 }
 
-form > .input-name{
+form>.input-name {
   grid-area: input-name;
 }
 
-form > .lable-name{
+form>.lable-name {
   grid-area: lable-name;
 }
 
-form > .input-phone{
+form>.input-phone {
   grid-area: input-phone;
 }
 
-form > .lable-phone{
+form>.lable-phone {
   grid-area: lable-phone;
 }
 
-form > .input-mail{
+form>.input-mail {
   grid-area: input-mail;
   padding: 0;
 }
 
-form > .lable-mail{
+form>.lable-mail {
   grid-area: lable-mail;
 }
 
-form > .input-date{
+form>.input-date {
   grid-area: input-date;
 }
 
-form > .lable-date{
+form>.lable-date {
   grid-area: lable-date;
 }
 
-form > .input-rating{
+form>.input-rating {
   grid-area: input-rating;
   display: grid;
   column-gap: 10px;
   width: 100px;
-  grid-template-areas: 
-  'rating-lable check-1 check-2 check-3 check-4 check-5'
-  '. lable-1 lable-2 lable-3 lable-4 lable-5';
+  grid-template-areas:
+    'rating-lable check-1 check-2 check-3 check-4 check-5'
+    '. lable-1 lable-2 lable-3 lable-4 lable-5';
   text-align: center;
 }
-.input-rating > *{width:20px;}
-.input-rating > .rating-lable{grid-area: rating-lable; width:70px;}
-.input-rating > .check-1{grid-area: check-1;}
-.input-rating > .check-2{grid-area: check-2;}
-.input-rating > .check-3{grid-area: check-3;}
-.input-rating > .check-4{grid-area: check-4;}
-.input-rating > .check-5{grid-area: check-5;}
-.input-rating > .lable-1{grid-area: lable-1;}
-.input-rating > .lable-2{grid-area: lable-2;}
-.input-rating > .lable-3{grid-area: lable-3;}
-.input-rating > .lable-4{grid-area: lable-4;}
-.input-rating > .lable-5{grid-area: lable-5;}
 
-form > .input-select{
+.input-rating>* {
+  width: 20px;
+}
+
+.input-rating>.rating-lable {
+  grid-area: rating-lable;
+  width: 70px;
+}
+
+.input-rating>.check-1 {
+  grid-area: check-1;
+}
+
+.input-rating>.check-2 {
+  grid-area: check-2;
+}
+
+.input-rating>.check-3 {
+  grid-area: check-3;
+}
+
+.input-rating>.check-4 {
+  grid-area: check-4;
+}
+
+.input-rating>.check-5 {
+  grid-area: check-5;
+}
+
+.input-rating>.lable-1 {
+  grid-area: lable-1;
+}
+
+.input-rating>.lable-2 {
+  grid-area: lable-2;
+}
+
+.input-rating>.lable-3 {
+  grid-area: lable-3;
+}
+
+.input-rating>.lable-4 {
+  grid-area: lable-4;
+}
+
+.input-rating>.lable-5 {
+  grid-area: lable-5;
+}
+
+form>.input-select {
   grid-area: input-select;
   display: flex;
   flex-direction: column;
 }
-form > .input-message{
+
+form>.input-message {
   grid-area: input-message;
   padding-left: 10px;
   display: flex;
@@ -167,17 +196,20 @@ form > .input-message{
   justify-content: space-between;
 }
 
-form > .input-heading{
+form>.input-heading {
   grid-area: input-heading;
   padding-top: 20px;
 }
 
-form  h3, form  h4{
+form h3,
+form h4 {
   padding-bottom: 10px;
 }
 
-input,select,textarea{
-  border:1px solid #b8bacf;
+input,
+select,
+textarea {
+  border: 1px solid #b8bacf;
   background: #d2d5dd;
   border-radius: 5px;
 }

@@ -15,9 +15,7 @@ body.dark a, body.dark p{
 
 
 body.dark nav{
-  grid-area: side-nav;
   background-color: #474E68;
-  height: 100%;
   color: white;
 }
 
@@ -28,12 +26,6 @@ body.dark .button{
 
 body.dark nav > ul > a, body.dark nav > ul > li {
   background-color: #50577A;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
 body.dark nav > ul > a:nth-child(even){
@@ -41,9 +33,8 @@ body.dark nav > ul > a:nth-child(even){
 }
 
 
-body.dark nav > ul > a{
+header > a >*, header > a >*:hover {
   color:white;
-  text-decoration: none;
 }
 
 body.dark nav > ul > a:hover{
