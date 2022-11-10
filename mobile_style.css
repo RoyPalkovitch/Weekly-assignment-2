@@ -18,12 +18,14 @@
     
   }
 
-  nav, nav > ul > li{
-    height: 30px;
+  nav{
+    height: 35px;
   }
 
-
-  nav:hover ,nav > ul:hover >  a {
+  nav > ul > li{
+    min-height: 35px;
+  }
+  nav:hover ,nav > ul:hover >  a{
     height: 100%;
     display: flex;
   }
