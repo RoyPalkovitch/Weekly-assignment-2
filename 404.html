@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>404 Error Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="/default_style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/default_style.css">
+    <link rel="stylesheet" href="/dark_style.css">
+    <link rel="stylesheet" href="/mobile_style.css">
 
-  <link rel="stylesheet" href="/custom_css.css">
-  
 </head>
-<body>
-  <header class="header">
+
+<body class="dark">
+  <main>
+    <header>
+      <a href="/"><img src="/images/clipart106848.png" width="50px" height="50px" />
+        <h1>WebDev Project</h1>
+      </a>
+      <i class="fa-regular fa-user fa-2x"></i>
+    </header>
     <nav class="nav">
       <ul>
-        <li class="menu-item"><a href="/index.html">Home</a>
-          <ul>
-            <li class="menu-item"><a href="/index.html#fav-book">Fav Book</a></li>
-            <li class="menu-item"><a href="/index.html#fav-place">Fav Place</a></li>
-            <li class="menu-item"><a href="/index.html#fav-food">Fav Food</a></li>
-          </ul>
+        <li class="menu-item">Navigation</li>
+        <a href="/#top">
+          <li class="menu-item">Home</li>
+        </a>
+        <a href="/#fav-book">
+          <li class="menu-item">Fav Book</li>
+        </a>
+        <a href="/#fav-place">
+          <li class="menu-item">Fav Place</li>
+        </a>
+        <a href="/#fav-food">
+          <li class="menu-item">Fav Food</li>
+        </a>
+        <a href="/#feedback">
+          <li class="menu-item">Feedback form</li>
+        </a>
+        <a href="/schools.html">
+          <li class="menu-item">Schools <i class="fa-solid fa-up-right-from-square"></i></li>
+        </a>
+        <a href="https://github.com/RoyPalkovitch/web-dev-project" target="_blank">
+          <li class="menu-item">Github repo <i class="fa-solid fa-up-right-from-square"></i></li>
+        </a>
         </li>
-        <li class="menu-item"><a href="/schools.html">Schools</a>
-          <ul>
-            <li class="menu-item"><a href="/schools.html#ganim">First school</a></li>
-            <li class="menu-item"><a href="/schools.html#rishonim">Second School</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="/index.html/fav-food">Dead end</a></li>
-
       </ul>
     </nav>
-  </header>
-  <main>
-  <section>
-  <h1>Oops seems like you reached a dead end</h1><Br>
-  <a class='button' href="/index.html">Click here to go back</a>
-</section>
+    <article>
+      <section id="top">
+        <h1>Oops seems like you reached a dead end</h1>
+        <a class='button' href="/index.html">Click here to go back</a>
+      </section>
+    </article>
+    <footer>
+      <p>Roy Palkovitch<br><a href="mailto:roy.palkovitch@gmail.com">roy.palkovitch@gmail.com</a></p>
+    </footer>
   </main>
 </body>
+
 </html>

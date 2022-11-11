@@ -44,11 +44,11 @@
         <a href="#feedback">
           <li class="menu-item">Feedback form</li>
         </a>
-        <a href="/schools.html " target="_blank">
-          <li class="menu-item">Schools</li>
+        <a  href="/schools.html " target="_blank">
+          <li class="menu-item">Schools <i class="fa-solid fa-up-right-from-square"></i></li>
         </a>
-        <a href="https://github.com/RoyPalkovitch/web-dev-project">
-          <li class="menu-item">Github repo</li>
+        <a href="https://github.com/RoyPalkovitch/web-dev-project" target="_blank">
+          <li class="menu-item">Github repo <i class="fa-solid fa-up-right-from-square"></i></li>
         </a>
         </li>
       </ul>
@@ -168,13 +168,13 @@
         <h2 class="main-headline">Feedback Form</h2>
         <div class="content">
           <h3>I'd love to hear from you</h3><br>
-          <form>
+          <form action="/#feedback" method="get">
             <h4 class="form-heading">Personal Details</h4>
-            <label class="lable-name">Full name:</label><input required class="input-name" type="text" />
-            <label class="lable-phone">Phone:</label><input class="input-phone" type="tel" />
-            <label class="lable-mail">Email:</label><input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            <label class="lable-name">Full name:</label><input required name="name" class="input-name" type="text" />
+            <label class="lable-phone">Phone:</label><input name="phone" class="input-phone" type="tel" />
+            <label class="lable-mail">Email:</label><input name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               class="input-mail" type="email" />
-            <label class="lable-date">Date:</label><input class="input-date" type="date" value="2000-01-01"
+            <label class="lable-date">Date:</label><input name="date" class="input-date" type="date" value="2000-01-01"
               min="1900-01-01" max='2050-01-01' />
             <h4 class="input-heading">Your Feedback</h4>
 
@@ -184,7 +184,7 @@
               <label class="lable-1" for="1"> 1</label>
               <input class="check-2" type="radio" id="2" name="rating" value="2">
               <label class="lable-2" for="2"> 2</label>
-              <input class="check-3" type="radio" id="3" name="rating" value="3">
+              <input class="check-3" type="radio" id="3" name="rating" checked value="3">
               <label class="lable-3" for="3"> 3</label>
               <input class="check-4" type="radio" id="4" name="rating" value="4">
               <label class="lable-4" for="4"> 4</label>
@@ -204,7 +204,7 @@
               </select>
             </div>
             <div class="input-message">
-              <label class="lable-mail">Your message:</label><textarea type="email"></textarea>
+              <label class="lable-mail">Your message:</label><textarea name="message" type="textarea" maxlength="100"></textarea>
             </div>
             <button class="button-submit" type="submit">Submit</button>
             <button class="button-reset" type="reset">Reset</button>

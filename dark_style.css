@@ -23,7 +23,6 @@ body.dark .button{
   background-color: #6b728e;
 }
 
-
 body.dark nav > ul > a, body.dark nav > ul > li {
   background-color: #50577A;
 }
@@ -33,11 +32,11 @@ body.dark nav > ul > a:nth-child(even){
 }
 
 
-header > a >*, header > a >*:hover {
+body.dark a ,body.dark a:hover {
   color:white;
 }
 
-body.dark nav > ul > a:hover{
+body.dark nav > ul > a:hover, body.dark .button:hover{
   background-color:#999AC6;
   color:white;
 

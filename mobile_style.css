@@ -20,12 +20,15 @@
 
   nav{
     height: 35px;
+    z-index: 1;
   }
 
   nav > ul > li{
     min-height: 35px;
   }
   nav:hover ,nav > ul:hover >  a{
+    min-height: 35px;
+
     height: 100%;
     display: flex;
   }

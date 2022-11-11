@@ -29,3 +29,7 @@ th, td{
   background: #00d3ff;
   background: linear-gradient(90deg, #00d3ff 0%, #01b5eb 35%, #039ad9 100%); 
 }
+
+body.dark caption{
+  color: white;
+}

@@ -4,23 +4,7 @@
   grid-area: main-headline;
 }
 
-.button {
-  margin-right: 0;
-  margin-top: 20px;
-  padding: 15px;
-  color: black;
-  background-color: #B8BACF;
-  text-decoration: none;
-  border-radius: 10px;
-  box-sizing: border-box;
-  width: 220px;
-  text-align: center;
-}
 
-.button:hover {
-  background-color: #999AC6;
-  color: black;
-}
 
 #fav-book>aside>img {
   height: 300px;
@@ -36,13 +20,12 @@
 @media only screen and (min-width: 950px) {
 #fav-place{
   display: grid;
-  align-items: center;
   grid-template-columns: 6fr 3fr;
   column-gap: 40px;
   grid-template-areas: 
   'content img'
   'content button';
-  justify-content: center;
+  
 }
 
 #fav-place > .content{
@@ -55,7 +38,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
-  max-height: 660px;
+  max-height: 620px;
 }
 #fav-place > .grid-button{
   grid-area: button;
@@ -70,7 +53,7 @@
 }
 
 #fav-place .image-container > img{
-  padding:5px 0;
+  margin:5px 0;
 }
 
 
