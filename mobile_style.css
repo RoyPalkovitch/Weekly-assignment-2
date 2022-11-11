@@ -39,6 +39,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin: 30px 0;
   }
 
   #top{
@@ -53,6 +54,21 @@
     padding: 0;
   }
 
+  #fav-place{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #fav-place .image-container{
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  #fav-place .image-container > img{
+    margin:20px 0;
+  }
   #feedback > .content > form{
     display: flex;
     flex-direction: column;

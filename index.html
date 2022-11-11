@@ -9,22 +9,22 @@
   <link rel="icon" type="image/x-icon" href="/images/fav/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7a21ee8338.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7a21ee8338.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/index_style.css">
   <link rel="stylesheet" href="/default_style.css">
   <link rel="stylesheet" href="/dark_style.css">
   <link rel="stylesheet" href="/mobile_style.css">
-  
+
 
 </head>
 
 <body>
   <main>
     <header>
-        <a href="/"><img src="/images/clipart106848.png" width="50px" height="50px" />
+      <a href="/"><img src="/images/clipart106848.png" width="50px" height="50px" />
         <h1>WebDev Project</h1>
-        </a>
-        <i class="fa-regular fa-user fa-2x"></i>
+      </a>
+      <i class="fa-regular fa-user fa-2x"></i>
     </header>
     <nav class="nav">
       <ul>
@@ -96,9 +96,23 @@
       </section>
 
       <section id="fav-place">
+        <div class="grid-button">
+          <a class="button"
+            href="https://www.google.com/maps/place/Railay+Beach,+Ao+Nang,+Mueang+Krabi+District,+Krabi,+Thailand/data=!4m2!3m1!1s0x3051ea9e0792e58b:0x61d88bb17c215081?sa=X&hl=en&ved=2ahUKEwjl1Z2Axo_7AhVRlxoKHYLRDTIQ8gF6BAh8EAE"
+            target="_blank">Click here to buy the book</a>
+        </div>
+        <div class="image-container">
+          <img class="image-1 railay-img  image-shadow" src="/images/Railay/1.jpg" alt='Railay' />
+          <img class="image-2 railay-img image-shadow" src="/images/Railay/2.jpg" alt='Railay' />
+          <img class="image-1 railay-img  image-shadow" src="/images/Railay/1.jpg" alt='Railay' />
+          <img class="image-2 railay-img image-shadow" src="/images/Railay/2.jpg" alt='Railay' />
+        </div>
         <div class="content">
           <h2 class="main-headline">Fav place - Railay beach</h2>
           <h3>About Railay beach</h3>
+          <div class="vanish-image-1"><img src="/images/Railay/1.jpg" width="400px" height="300px" /></div>
+          <div class="vanish-image-2"><img src="/images/Railay/2.jpg" width="400px" height="300px" /></div>
+
           <p>
             Railay (Thai: ไร่เลย์, pronounced [râj lēː]), also known as Rai Leh,
             is a small peninsula between the city of Krabi and Ao Nang in Thailand.
@@ -120,16 +134,14 @@
             exercitationem asperiores quos, quis omnis eligendi commodi
             ea mollitia voluptatibus explicabo saepe ullam distinctio.
           </p>
-
         </div>
-        <aside>
-          <img class="railay-img image-shadow" src="/images/Railay/1.jpg" alt='Railay' />
+
+        <!-- <aside class="image-1">
+          <img class="railay-img railay-img-1 image-shadow" src="/images/Railay/1.jpg" alt='Railay' />
           <img class="railay-img image-shadow" src="/images/Railay/2.jpg" alt='Railay' />
           <a class="button" href="https://www.google.com/maps/place/Railay+Beach,+Ao+Nang,+Mueang+Krabi+District,+Krabi,+Thailand/data=!4m2!3m1!1s0x3051ea9e0792e58b:0x61d88bb17c215081?sa=X&hl=en&ved=2ahUKEwjl1Z2Axo_7AhVRlxoKHYLRDTIQ8gF6BAh8EAE"
           target="_blank">Click here to buy the book</a>
-        </aside>
-
-
+        </aside> -->
       </section>
 
       <section id="fav-food">
@@ -160,8 +172,10 @@
             <h4 class="form-heading">Personal Details</h4>
             <label class="lable-name">Full name:</label><input required class="input-name" type="text" />
             <label class="lable-phone">Phone:</label><input class="input-phone" type="tel" />
-            <label class="lable-mail">Email:</label><input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="input-mail" type="email" />
-            <label class="lable-date">Date:</label><input class="input-date" type="date" value="2000-01-01" min="1900-01-01" max='2050-01-01'/>
+            <label class="lable-mail">Email:</label><input required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              class="input-mail" type="email" />
+            <label class="lable-date">Date:</label><input class="input-date" type="date" value="2000-01-01"
+              min="1900-01-01" max='2050-01-01' />
             <h4 class="input-heading">Your Feedback</h4>
 
             <div class="input-rating">
@@ -187,12 +201,12 @@
                 <option value="webdev">Webdev</option>
                 <option value="google">Google</option>
                 <option value="other">Other</option>
-              </select> 
+              </select>
             </div>
             <div class="input-message">
-            <label class="lable-mail">Your message:</label><textarea  type="email" ></textarea>
-          </div>
-            <button class="button-submit" type="submit">Submit</button> 
+              <label class="lable-mail">Your message:</label><textarea type="email"></textarea>
+            </div>
+            <button class="button-submit" type="submit">Submit</button>
             <button class="button-reset" type="reset">Reset</button>
           </form>
         </div>

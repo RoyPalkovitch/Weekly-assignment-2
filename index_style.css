@@ -1,21 +1,25 @@
+
+
+.main-headline {
+  grid-area: main-headline;
+}
+
 .button {
   margin-right: 0;
+  margin-top: 20px;
   padding: 15px;
   color: black;
   background-color: #B8BACF;
   text-decoration: none;
   border-radius: 10px;
   box-sizing: border-box;
-  max-width: 230px;
+  width: 220px;
+  text-align: center;
 }
 
 .button:hover {
   background-color: #999AC6;
   color: black;
-}
-
-.main-headline {
-  grid-area: main-headline;
 }
 
 #fav-book>aside>img {
@@ -24,20 +28,71 @@
   margin-bottom: 10px;
 }
 
-#fav-place>aside {
-  overflow-y: scroll;
+
+.railay-img{
+  width:300px;
+  height: 200px;
+}
+@media only screen and (min-width: 950px) {
+#fav-place{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 3fr;
+  column-gap: 40px;
+  grid-template-areas: 
+  'content img'
+  'content button';
+  justify-content: center;
 }
 
-#fav-place>aside>* {
-  margin: 10px 0;
+#fav-place > .content{
+  grid-area: content;
+}
+#fav-place > .image-container{
+  grid-area: img;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 660px;
+}
+#fav-place > .grid-button{
+  grid-area: button;
+  align-self: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#fav-place > .grid-button > .button{
+  width: 320px;
+}
+
+#fav-place .image-container > img{
+  padding:5px 0;
+}
+
+
+
+.image-container:has(>.image-1:hover) ~ .content div.vanish-image-1 , .image-container:has(>.image-2:hover)  ~ .content div.vanish-image-2 {
+  display: block;
+}
+.vanish-image-1> img ,.vanish-image-2> img{
+  width: 400px;
+  height: 300px;
 }
 
 .image-shadow {
   border: 1px black solid;
   box-shadow: 5px 5px 8px;
 }
+}
+.vanish-image-1, .vanish-image-2{
+  align-self: center;
+  display: none;
 
-
+}
 #feedback,
 #fav-food {
   display: flex;
