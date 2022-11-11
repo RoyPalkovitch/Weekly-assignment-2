@@ -5,6 +5,10 @@
     
   }
 
+  main > article{
+    overflow-y: none;
+  }
+
   main > header{
     justify-content: space-around;
   }

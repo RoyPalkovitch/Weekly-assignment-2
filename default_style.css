@@ -16,6 +16,7 @@ h1,h2,h3,h4{
   padding-bottom: 10px;
 }
 
+@media only screen and (min-width: 950px) {
 
 main{ 
   display: grid;
@@ -27,7 +28,7 @@ main{
   ;
   height: 100%;
 }
-
+}
 
 main > header{
   grid-area: header;
